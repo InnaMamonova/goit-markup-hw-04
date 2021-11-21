@@ -130,9 +130,12 @@ ul {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/bg-image.jpg);
   background-repeat: no-repeat;
-  background-size: 1600px;
+  background-size: cover;
   background-position: center;
   background-color: var(--background-color-footer);
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 600px;
 }
 
 .hero .container {
@@ -374,6 +377,9 @@ ul {
 .social-item {
   width: 44px;
   height: 44px;
+}
+.social-item:not(:last-child) {
+  margin-right: 10px;
 }
 .social-link {
   width: 100%;
